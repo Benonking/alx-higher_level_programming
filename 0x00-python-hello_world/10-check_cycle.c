@@ -12,13 +12,17 @@ int check_cycle(listint_t *list)
 
 	if (!list)
 		return (0);
-	while (element1->next != NULL && element1->next->next != NULL)
+	while (1)
 	{
-		element1 = element1->next->next;
-		element2 = element2->next;
+		if (element1->next != NULL && element1->next->next != NULL)
+		{
+			element1 = element1->next->next;
+			element2 = element2->next;
 
-		if (element1 == element2)
-			return (1);
+			if (element1 == element2)
+				return (1);
+		}
+		else
+			return (0);
 	}
 }
-

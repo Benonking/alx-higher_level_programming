@@ -7,7 +7,7 @@
  * Return: 0 if not else return 1
  */
 
-int is_palidrome(listint_t **head)
+int is_palindrome(listint_t **head)
 {
 	listint_t *tmp = *head;
 	unsigned int size = 0, i = 0;

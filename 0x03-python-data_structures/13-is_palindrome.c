@@ -1,10 +1,12 @@
 #include "lists.h"
+
 /**
  * is_palidrome - check if a list is a palidrome
  * @listint_t: pointer to head of list
  *
  * Return: 0 if not else return 1
  */
+
 int is_palidrome(listint_t **head)
 {
 	listint_t *tmp = *head;
@@ -39,5 +41,3 @@ int is_palidrome(listint_t **head)
 	}
 	return (1);
 }
-
-

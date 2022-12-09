@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-'''
-compute square value of all integers of a matrix
-'''
 def square_matrix_simple(matrix=[]):
     if matrix != None:
         NewMatrix=[]

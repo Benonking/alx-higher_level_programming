@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    if matrix != None:
+    if matrix is not None:
         NewMatrix = []
         for row in matrix:
             NewMatrix.append(list(map(lambda x: x ** 2, row)))

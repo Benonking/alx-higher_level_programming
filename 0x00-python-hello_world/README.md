@@ -13,3 +13,9 @@
 - [x] 100-write.py                         - use the write module to print
 - [x] 101-compile.py                       - script that compiles a Python file
 - [x] 102-magic_calculation.py             -use pye code to peform calcualtion
+
+### Environment
+- Languages: Python 3.8.5 and C
+- OS: Ubuntu 20.04 LTS
+- Compiler :pyhon-python3, C-gcc
+- Style guidlines: [pycodestyle 2.10.0 ](https://pypi.org/project/pycodestyle/),[BettyStyle](https://github.com/holbertonschool/Betty/wiki)

@@ -30,7 +30,7 @@ listint_t *insert_node(listint_t **head, int number)
 	if ((*head)->next == NULL)/*if only one item in list, comapare the two nodes*/
 	{
 		if ((*head)->n < new->n)
-			(*head)->n = new;
+			(*head)->n = new->n;
 		else
 		{
 			new->next = *head;

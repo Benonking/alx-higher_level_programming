@@ -1,4 +1,5 @@
 #!/usr/bin/pytthon3
+
 """
 Module 4-square
 Defines class Sqaure with private attribute size
@@ -23,7 +24,7 @@ class Square:
             sie(int): default = 0 if none
 
         """
-        self.__size = size
+        self.size = size
 
     @property
     def size(self):
@@ -42,7 +43,7 @@ class Square:
         """
         if type(value) is not int:
             raise TypeError("size must be an integer")
-        elif size < 0:
+        elif value < 0:
             raise ValueError("size musbe be >=0")
         else:
             self.__size = value
@@ -53,4 +54,4 @@ class Square:
         Return:
             area
         """
-        return (self.__size) * (self.__size)
+        return (self.__size) **2

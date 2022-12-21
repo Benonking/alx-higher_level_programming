@@ -21,7 +21,7 @@ class Square:
         area(self)
         my_print(self)
     """
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """
         Initialise Square
         Attributes:
@@ -50,13 +50,14 @@ class Square:
             raise TypeError("size must be an integer")
         else:
             self.__size = val
-    
+
     @property
     def position(self):
         """
         Getter: Returns position
         """
         return self.__position
+    
     @position.setter
     def position(self, value):
         """
@@ -83,6 +84,6 @@ class Square:
             print()
         else:
             print ("\n" * self.__position[1], end="")
-            print("\n".join([" " * self.__position[0] +
+            print ("\n".join([" " * self.__position[0] +
                              "#" * self.__size
                              for rows in range(self.__size)]))

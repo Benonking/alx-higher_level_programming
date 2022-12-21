@@ -9,7 +9,7 @@ Defines class square with private attribute size
 class Square:
     """
     class Square definition
-    
+
     Args:
         size: size of the side in square
     """

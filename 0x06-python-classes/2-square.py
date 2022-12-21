@@ -1,12 +1,12 @@
-#!/usr/bin/pythom3
+#!/usr/bin/python3
 
 """
 Module 2-square
-Defines
+Defines class Square 
 """
 
 
-class square:
+class Square:
     """
     class square definition
     Args:

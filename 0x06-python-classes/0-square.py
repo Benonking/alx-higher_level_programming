@@ -9,4 +9,3 @@ Defines class square
 class Square:
     """Empty class"""
     pass
-

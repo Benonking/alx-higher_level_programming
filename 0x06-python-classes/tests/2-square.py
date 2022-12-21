@@ -1,29 +1,26 @@
 #!/usr/bin/python3
-
 """
-Module 2-square
-Defines class Square with private attribute size
+Module 1-square
+Defines class square with private attribute size
+
 """
 
 
 class Square:
     """
-    class square definition
-
+    class Square definition
     Args:
-        size(int): size of a side in square
+        size: size of the side in square
     """
-
     def __init__(self, size=0):
         """
-        Initializeses Square
-
+        Initializes square
         Attributes:
-        __size(int): size of side of square, defaults to 0 if none
+            size: size of the side of square
         """
         if type(size) is not int:
-            raise TypeError("size must be an integer")
+            raise TypeError("Size must be integer")
         elif size < 0:
-            raise ValueError("size must be >=0")
+            raise ValueError("size must be >= 0")
         else:
             self.__size = size

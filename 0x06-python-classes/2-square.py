@@ -2,13 +2,14 @@
 
 """
 Module 2-square
-Defines class Square 
+Defines class Square with private attribute size
 """
 
 
 class Square:
     """
     class square definition
+
     Args:
         size(int): size of a side in square
     """
@@ -16,6 +17,7 @@ class Square:
     def __init__(self, size=0):
         """
         Initializeses Square
+
         Attributes:
         __size(int): size of side of square, defaults to 0 if none
         """

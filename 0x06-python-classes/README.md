@@ -1,5 +1,6 @@
 ## Python Clasess
-- 1-square.py
+- 0-square.py - empty class that defines a square
+- 1-square.py - 
 - 2-square.py
 - 3-square.py
 - 4-square.py

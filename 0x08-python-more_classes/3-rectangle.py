@@ -21,6 +21,7 @@ class Rectangle:
         height(self, value)
         area(self)
         perimeter(self)
+        __str__(self)
     """
     def __init__(self, width=0, height=0):
         """
@@ -73,6 +74,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
     def area(self):
         """
         Returns area
@@ -86,7 +88,6 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return (2 * self.__height) + (2 * self.__width)
-    
 
     def __str__(self):
         """prints rectangle with #"""

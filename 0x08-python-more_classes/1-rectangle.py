@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Module - 1-recatngle.py
-Defines class Rectangle 
+Defines class Rectangle
 with private attributes width and height
 """
 
@@ -28,7 +28,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         """
@@ -36,7 +36,7 @@ class Rectangle:
         Returns width
         """
         return self.__width
-        
+
     @width.setter
     def width(self, value):
         """
@@ -49,7 +49,6 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-
 
     @property
     def height(self):

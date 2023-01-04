@@ -5,8 +5,18 @@ Defines class Rectangle with private attributes width and height
 """
 
 
-class Rectangle():
+class Rectangle:
     """
+    Defines class rectangle with private atrributes width and height
+    Args:
+        width(int):width
+        height(height): height
+    Functions:
+        __init__(self, width, height)
+        width(self)
+        width(self, value)
+        height(self)
+        height(self, value)
     """
     def __init__(self, width=0, height=0):
         """

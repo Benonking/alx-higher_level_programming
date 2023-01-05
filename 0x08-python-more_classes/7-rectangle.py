@@ -3,8 +3,10 @@
 Module - 7-recatngle.py
 Defines class Rectangle
 with private attributes width and height
-Public attributes number_of_instances, print_symbol
+Public attributes number_of_instances, 
+print_symbol - print rectangle of a certain symbol provided
 Defines area a perimeter functions
+delete, and keeps tracks of number of instances 
 """
 
 
@@ -12,8 +14,12 @@ class Rectangle:
     """
     Defines class rectangle with private atrributes width and height
     Args:
-        width(int):width
+        width(int): width
         height(height): height
+        
+        Attributes:
+            number _of_instances
+            print_symbol
     Functions:
         __init__(self, width, height)
         width(self)
@@ -117,4 +123,4 @@ class Rectangle:
         """
         print("Bye Rectangle...")
 
-        Rectangle.number_of_instances -= 1
+        type(self).number_of_instances -= 1

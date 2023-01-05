@@ -3,7 +3,8 @@
 Module - 6-recatngle.py
 Defines class Rectangle
 with private attributes width and height
-Defines area and perimeter functions
+Pulic attribute number_of_instances
+Defines area a perimeter functions
 """
 
 
@@ -25,6 +26,8 @@ class Rectangle:
         __repr__(self)
         __del__(self)
     """
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """
         Initialises Rectangle
@@ -34,6 +37,8 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -110,4 +115,4 @@ class Rectangle:
         """
         print("Bye Rectangle...")
 
-
+        Rectangle.number_of_instances -= 1

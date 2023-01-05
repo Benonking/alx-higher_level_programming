@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module - 8-recatngle.py
+Module - 9-recatngle.py
 Defines class Rectangle
 with private attributes width and height
 Public attributes number_of_instances,
@@ -33,6 +33,7 @@ class Rectangle:
         __repr__(self)
         __del__(self)
         bigger_or_equal
+        square
     """
     number_of_instances = 0
     print_symbol = "#"

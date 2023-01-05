@@ -108,4 +108,4 @@ class Rectangle:
         """
         Deletes instance of rectangle
         """
-        print("Bye Rectangle...")
+        print("Bye rectangle...")

@@ -3,7 +3,7 @@
 Module - 7-recatngle.py
 Defines class Rectangle
 with private attributes width and height
-Pulic attribute number_of_instances
+Public attributes number_of_instances, print_symbol
 Defines area a perimeter functions
 """
 
@@ -38,6 +38,8 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+
+        number_of_instances += 1
 
     @property
     def width(self):

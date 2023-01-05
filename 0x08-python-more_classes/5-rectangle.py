@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module - 4-recatngle.py
+Module - 5-recatngle.py
 Defines class Rectangle
 with private attributes width and height
 Defines area and perimeter functions
@@ -23,6 +23,7 @@ class Rectangle:
         perimeter(self)
         __str__(self)
         __repr__(self)
+        __del__(self)
     """
     def __init__(self, width=0, height=0):
         """

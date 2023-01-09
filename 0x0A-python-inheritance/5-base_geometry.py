@@ -1,2 +1,12 @@
-#/usr/bin/python3 6-base_geometry.py 7-base_geometry.py 8-rectangle.py
-#/usr/bin/python3
+#!/usr/bin/python3
+"""
+Module 5-base_geometry
+contains an empty class
+"""
+
+
+class BaseGeometry:
+    """
+    empty class
+    """
+    pass

@@ -22,4 +22,4 @@ class Rectangle(BaseGeometry):
         self.__height = height
 
         super().integer_validator("width", width)
-        supper().integer_validator("height", height)
+        super().integer_validator("height", height)

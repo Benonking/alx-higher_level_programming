@@ -1,0 +1,30 @@
+# run test with python3 -m doctest -v ./test/[filename].txt
+
+First import method to test
+>>> MyList = __import__('1-my_list').MyList
+
+Test ints (program assumes all elements to be integers):
+	>>> my_list = MyList()
+	>>> my_list.append(1)
+	>>> my_list.append(50)
+	>>> my_list.append(3)
+	>>> my_list.append(3)
+	>>> my_list.append(1)
+	>>> print(my_list)
+	[1, 50, 3, 3, 1]
+	>>> my_list.print_sorted()
+	[1, 1, 3, 3, 50]
+Test list with only one element:
+	>>> one_element = Mylist()
+	>>> one_element(20)
+	>>> print(one_element)
+	[20]
+	>>> one_element.print_sorted()
+	[20]
+
+Test no elements:
+	>>> none = Mylist()
+	>>> print(none)
+	[]
+	>>>none.print_sorted()
+	[]

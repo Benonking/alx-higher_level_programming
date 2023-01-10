@@ -5,7 +5,7 @@ contains a function that appends test to a file
 """
 
 
-def append_write(filename="", text""):
+def append_write(filename="", text=""):
     """
     appends a string at end of a text file
     """

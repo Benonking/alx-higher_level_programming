@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 """
 Module 2-append_write
 contains a function that appends test to a file

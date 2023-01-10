@@ -1,5 +1,5 @@
 # Python file  I/O
-This folf=der contains different ways of manipulating files in Python
+This folder contains different ways of manipulating files in Python
 
 ## ---files---
 

@@ -8,7 +8,7 @@ Contains a function that writes an object to a text file
 import json
 
 
-def save-to_json_file(my_obj, filename):
+def save_to_json_file(my_obj, filename):
     """
     save object to file
     """

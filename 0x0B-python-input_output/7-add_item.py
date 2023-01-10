@@ -6,7 +6,7 @@ them to a file
 """
 
 
-import sys
+from sys import argv
 
 save_to_json_file = __import__('5-save_to_jason_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').save_from_json_file
@@ -14,7 +14,7 @@ load_from_json_file = __import__('6-load_from_json_file').save_from_json_file
 f = "add_item.json"
 try:
     a_list = load_from_json_file(f)
-except(TypeError, FileNotFoundError):
+except(FileNotFoundError):
     a_list = []
 
 for i in sys.argv[1:]:

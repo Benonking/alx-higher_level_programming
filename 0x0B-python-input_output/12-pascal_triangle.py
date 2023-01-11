@@ -4,8 +4,6 @@ Module 12--pascal_triangle
 contains a function that impliments list of pascals triangle given size
 """
 
-from math import factorial
-
 
 def pascal_triangle(n):
 

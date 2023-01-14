@@ -131,8 +131,9 @@ class Rectangle(Base):
         """
         Prints the rectangle with #
         """
-        for w in range(self.__height):
-            print("#" * self.__width)
+        print("\n" * self.__y + 
+                 "\n".join(" " * self.__x + "#" * self.__width 
+                     for i in range(self.height)))
 
     def __str__(self):
         """
@@ -141,4 +142,25 @@ class Rectangle(Base):
         """
         return "[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
                 self.__class__.__name__, self.id, self.__x,
-                iself.__y, self.__width, self.__height)
+                self.__y, self.__width, self.__height)
+
+
+    def update(self, *args):
+        """
+        assign arguments to each atrribute
+        assign Key/value argument to attributes
+        """
+        if args:
+            for k, v in enumerate(self, *args, **kwargs):
+                if k == 0:
+                    self.id = v
+                elif k == 1:
+                    self.width = v
+                elif k == 2:
+                    self.height = v
+                elif k == 3:
+                    self.x = v
+                else:
+                    self.y = v
+        else:
+            

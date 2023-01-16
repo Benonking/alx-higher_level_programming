@@ -145,13 +145,13 @@ class Rectangle(Base):
                 self.__y, self.__width, self.__height)
 
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         assign arguments to each atrribute
         assign Key/value argument to attributes
         """
         if args:
-            for k, v in enumerate(self, *args, **kwargs):
+            for k, v in enumerate(args):
                 if k == 0:
                     self.id = v
                 elif k == 1:
@@ -163,4 +163,25 @@ class Rectangle(Base):
                 else:
                     self.y = v
         else:
-            
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+            if "width" in kwargs:
+                self.width = kwargs["width"]
+            if "height" in kwargs:
+                self.height = kwargs["height"]
+            if "x" in kwargs:
+                self.x = kwargs["x"]
+            if "y" in kwargs:
+                self.y = kwargs["y"]
+    
+    def to_dictionary(self):
+        """
+        Retunrs dictionary representation of Rectangle
+        """
+        r = {}
+        r["id"] = self.id
+        r["width"] = self.width
+        r["height"] = self.height
+        r["x"] = self.x
+        r["y"] = self.y
+        return r

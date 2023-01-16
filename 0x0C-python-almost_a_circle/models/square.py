@@ -34,7 +34,7 @@ class Square(Rectangle):
         Return self.size
         """
         return self.width
-    
+
     @size.setter
     def size(self, value):
         """
@@ -43,15 +43,15 @@ class Square(Rectangle):
         """
         self.width = value
         self.height = value
-    
+
     def __str__(self):
         """
         return [Square] (<id>) <x>/<y> - <size>
 
         """
-        return "[{:s}] ({:d}) {:d}/{:d} - {:d}".format(self.__class__.__name__,
-                self.id, self.x, self.y, self.size)
-    
+        return "[{:s}] ({:d}) {:d}/{:d} - {:d}".format(
+                self.__class__.__name__, self.id, self.x, self.y, self.size)
+
     def update(self, *args, **kwargs):
         """
         Assignes attributes to argumets if args exist
@@ -80,4 +80,3 @@ class Square(Rectangle):
                 self.x = kwargs["x"]
             if "y" in kwargs:
                 self.y = kwargs["y"]
-

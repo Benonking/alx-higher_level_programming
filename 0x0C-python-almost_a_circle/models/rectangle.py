@@ -131,9 +131,9 @@ class Rectangle(Base):
         """
         Prints the rectangle with #
         """
-        print("\n" * self.__y + 
-                 "\n".join(" " * self.__x + "#" * self.__width 
-                     for i in range(self.height)))
+        print("\n" * self.__y +
+              "\n".join(" " * self.__x + "#" * self.__width
+                        for i in range(self.height)))
 
     def __str__(self):
         """
@@ -143,7 +143,6 @@ class Rectangle(Base):
         return "[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
                 self.__class__.__name__, self.id, self.__x,
                 self.__y, self.__width, self.__height)
-
 
     def update(self, *args, **kwargs):
         """
@@ -173,7 +172,7 @@ class Rectangle(Base):
                 self.x = kwargs["x"]
             if "y" in kwargs:
                 self.y = kwargs["y"]
-    
+
     def to_dictionary(self):
         """
         Retunrs dictionary representation of Rectangle

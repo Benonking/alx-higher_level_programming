@@ -8,6 +8,7 @@ contains class Base
 
 import json
 
+
 class Base:
     """
     Methods:
@@ -29,6 +30,7 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """
@@ -37,3 +39,16 @@ class Base:
         if list_dictionaries is None:
             return []
         return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """
+        Writes the JSON string representation of list_objs to a file
+        """
+        objs = []
+        if list_objs is not None:
+            for ob in list_objs:
+                objs.append(cls.to_dictionary(ob))
+        filename = cls.__name__ + ".json"
+        with open(filename, "w") as f:
+            f.write(cls.to_json_string(objs))

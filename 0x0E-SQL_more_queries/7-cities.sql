@@ -1,6 +1,9 @@
 -- creates a db hbtn_usa and table cities
---cites(id int outo increment not null primary key
---state_id INT  cant be null foerign key)
+-- table description
+--     cites(id int outo increment not null primary key
+--     state_id INT  cant be null foerign key)
+-- script shoul not fail if db or table doesnt exist
+
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 CREATE TABLE IF NOT EXISTS cities(
 	id INT UNIQUE AUTO_INCREMENT NOT NULL PRIMARY KEY,

@@ -1,6 +1,4 @@
 #!/usr/bin/node
-const arr = ['C is fun', 'Python is cool', 'JavaScipt is amazing'];
-arr.forEach((element)=>{
+for (const element of ['C is fun', 'Python is cool', 'JavaScipt is amazing']){
 	console.log(element);
 }
-);

@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+Module 0-select_states
+Modules connects to db give in arguments and returns a list of all states
+"""
 import MySQLdb
 from sys import argv
 if (__name__ == '__main__'):

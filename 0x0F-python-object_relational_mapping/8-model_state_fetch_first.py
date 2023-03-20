@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Module 8-model_state_fetch_first
+list first state in table states
 """
 from sys import argv
 from model_state import Base, State

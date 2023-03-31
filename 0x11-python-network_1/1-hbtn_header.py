@@ -4,7 +4,7 @@ Take in URL, sends request and dispys the value of the X-request-Id
     variable found in the header of the resposne
 """
 from sys import argv
-from urllib import argv
+from urllib import request
 
 
 if __name__ == "__name__":

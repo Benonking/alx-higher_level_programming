@@ -4,7 +4,8 @@ send request to URL and displays the body
 Handle HTTPerror exception and prints Error code:
 """
 from sys import argv
-from import urllib import request, error
+import urllib.request as request
+import urllib.error as error
 
 if __name__ == '__main__':
     req = request.Request(argv[1])

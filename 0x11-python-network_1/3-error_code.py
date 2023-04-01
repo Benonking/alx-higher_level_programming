@@ -4,11 +4,12 @@ send request to URL and displays the body
 Handle HTTPerror exception and prints Error code:
 """
 from sys import argv
-from import urllib import request
+from import urllib import request, error
 
-if __name__ == '__main__':
+ir __name__ == '__main__':
+    req = request.Request(argv[1])
     try:
-        with request.urlopen(argv[1]) as resp:
+        with request.urlopen(req) as resp:
             rep = resp.read()
             print(rep.decode('utf-8'))
     except error.HTTPError as e:

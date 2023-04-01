@@ -6,7 +6,7 @@ Handle HTTPerror exception and prints Error code:
 from sys import argv
 from import urllib import request, error
 
-ir __name__ == '__main__':
+if __name__ == '__main__':
     req = request.Request(argv[1])
     try:
         with request.urlopen(req) as resp:

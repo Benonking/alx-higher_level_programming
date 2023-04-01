@@ -5,15 +5,14 @@ Take in email as argument send POST request to it
 """
 
 from sys import argv
-from urllib import request, parse
+import urllib.parse as parse
+import urllib.request as request
 
 if __name__ == '__main__':
     url = argv[1]
-    email = argv[2]
-    value = {'email': email}
-    data = parse.urlencode(value)
-    data = data.encode('ascii')  # should be bytes
+    value = {'email': argv[2]
+    data = parse.urlencode(value).encode('utf-8')
     req = request.Request(url, data)
     with request.urlopen(req) as resp:
         r = resp.read()
-        print("Your email is: {}".format(r.decode('utf8')))
+        print(r.read().decode('utf-8'))

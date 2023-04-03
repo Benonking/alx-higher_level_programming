@@ -13,7 +13,7 @@ if __name__ == '__main__':
     req = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
     try:
         req_dict = req.json()
-        if req_dict = {}:
+        if req_dict == {}:
             print("No result")
         else:
             print("[{}] {}".format(req_dict.get('id'), req_dict.get('name')))

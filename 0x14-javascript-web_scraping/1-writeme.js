@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//write data to a file
+// write data to a file
 
 const fs = require('fs');
 const fileName = process.argv[2];

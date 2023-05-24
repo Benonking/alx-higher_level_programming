@@ -4,13 +4,13 @@ const request = require('request');
 const ID = process.argv[2];
 const url = 'http://swapi.co/api/films/' + ID;
 
-request(url, function (err, response, body) {
+request.get(url, function (err, response, body) {
   if (err) {
     console.log(err);
   } else {
     const charList = JSON.parse(body).characters;
     for (let j = 0; j < charList.length; j++) {
-      request(charList[j], function (err, response, body) {
+      request.get(charList[j], function (err, response, body) {
         if (err) {
           console.log(err);
         } else {

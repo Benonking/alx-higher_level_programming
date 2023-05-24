@@ -2,7 +2,7 @@
 // print all characters of a starwars movie
 const request = require('request');
 const ID = process.argv[2];
-const url = 'http://swapi.co/api/films/' + ID;
+const url = 'https://swapi.co/api/films/' + ID;
 
 request.get(url, function (err, response, body) {
   if (err) {

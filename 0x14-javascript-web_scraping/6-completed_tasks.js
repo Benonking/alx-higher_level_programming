@@ -6,7 +6,7 @@ request(url, function (err, response, body) {
   if (err) {
     console.log(err);
   } else {
-    responseDic = {};
+    const responseDic = {};
     const responseList = JSON.parse(body);
     for (let i; i < responseList.length; i++) {
       if (responseList[i].completed === true) {

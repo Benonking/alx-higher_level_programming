@@ -8,12 +8,12 @@ request(url, function (err, response, body) {
   } else {
     const responseDic = {};
     const responseList = JSON.parse(body);
-    for (let i; i < responseList.length; i++) {
+    for (let i = 0; i < responseList.length; i++) {
       if (responseList[i].completed === true) {
-        if (responseDic[responseList[i].userId] === undefined) {
-          responseDic[responseList[i].userId] = 1;
+        if (responseList[i].userId in responseDic) {
+          responseDic[responseList[i].userId] += 1;
         } else {
-          responseDic[responseList[i].userId]++;
+          responseDic[responseList[i].userId] = 1;
         }
       }
     }
